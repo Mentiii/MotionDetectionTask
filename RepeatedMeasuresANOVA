@@ -1,0 +1,13 @@
+jaspAnova::AnovaRepeatedMeasures(
+        version = "0.18.3",
+        contrasts = list(list(contrast = "none", variable = "Visibility"), list(contrast = "none", variable = "Delay"), list(contrast = "none", variable = "Bin"), list(contrast = "none", variable = list("Visibility", "Delay")), list(contrast = "none", variable = list("Visibility", "Bin")), list(contrast = "none", variable = list("Delay", "Bin")), list(contrast = "none", variable = list("Visibility", "Delay", "Bin"))),
+        descriptivePlotErrorBar = TRUE,
+        descriptivePlotHorizontalAxis = "Bin",
+        descriptivePlotSeparateLines = "Delay",
+        descriptives = TRUE,
+        postHocTerms = list(list("Visibility", "Bin"), "Delay"),
+        repeatedMeasuresCells = list("30-35_per_lVis", "42-47_per_lVis", "30-35_stm_lVis", "42-47_stm_lVis", "30-35_per_hVis", "42-47_per_hVis", "30-35_stm_hVis", "42-47_stm_hVis", "30-35_per_no", "42-47_per_no", "30-35_stm_no", "42-47_stm_no"),
+        repeatedMeasuresFactors = list(list(levels = list("low visible", "high visible", "invisble"), name = "Visibility"), list(levels = list("perception", "stm"), name = "Delay"), list(levels = list("30-35", "42-47"), name = "Bin")),
+        sphericityCorrectionHuynhFeldt = TRUE,
+        sphericityTests = TRUE,
+        withinModelTerms = list("Visibility", "Delay", "Bin", list("Visibility", "Delay"), list("Visibility", "Bin"), list("Delay", "Bin"), list("Visibility", "Delay", "Bin")))
