@@ -12,13 +12,13 @@ Part 1 t/m 4 are together the whole task. Run them sequentally (remember to use 
 
 **How to analyse the data**
 1. 'Analyse_individual.R'
-  Use this script to write the table_allBins in excel for every participant.
+  Use this script to write the table_allBins in excel for every participant and check for the exclusion criteria. -> input the seperate participants from allData
 3. Excel
-  Use excel to calculate the the proportions for every bin in each condition.
+  Use excel to calculate the the proportions for every bin in each condition, just as in data_processed4
 4. JASP
-  Do the repeated measureres ANOVA in JASP
+  Do the repeated measureres ANOVA in JASP -> input data_processed4
 5. 'post_hoc.R'
-  This script does post-hoc paired t-tests (and the non-parametric equvalent) on the main effects from the ANOVA
+  This script does post-hoc paired t-tests (and the non-parametric equvalent) on the main effects from the ANOVA -> input data_short_long
 6. 'analyse_alldata.R'
-  This script gets all the raw (every trial, every participant) data as input and generates plots. 
+  This script gets all the raw (every trial, every participant) data as input and generates plots. -> input allData
    
